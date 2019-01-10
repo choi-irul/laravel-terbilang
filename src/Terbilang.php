@@ -12,7 +12,7 @@ class Terbilang {
         if (!is_numeric($nominal)) {
             return false;
         }        
-        return Self::kata($nominal);
+        return Self::kata($nominal) . 'rupiah';
     }
 
     public static function kata($x) {
@@ -41,6 +41,6 @@ class Terbilang {
         } else if ($x < 1000000000000000) {
             $temp = self::kata($x / 1000000000000) . " trilyun" . self::kata(fmod($x, 1000000000000));
         }
-        return $temp . 'rupiah';
+        return $temp;
     }
 }
