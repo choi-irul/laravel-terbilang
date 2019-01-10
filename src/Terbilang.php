@@ -4,18 +4,18 @@ namespace Hammunima\Terbilang;
 
 class Terbilang {
 
-    public static function coba() {
+    public function coba() {
         return 'Hello World!';
     }
 
-    public static function nominal($nominal) {
+    public function nominal($nominal) {
         if (!is_numeric($nominal)) {
             return false;
         }        
         return Self::kata($nominal);
     }
 
-    public static function kata($x) {
+    public function kata($x) {
         $x = abs($x);
 
         $angka = array("", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas");

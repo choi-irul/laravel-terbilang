@@ -22,7 +22,7 @@
                 "Hammunima\\Terbilang\\TerbilangServiceProvider"
             ],
             "aliases": {
-                "Tebilang": "Hammunima\\Tebilang\\Facade"
+                "Terbilang": "Hammunima\\Terbilang\\Facade"
             }
         }
     }

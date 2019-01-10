@@ -4,6 +4,8 @@ namespace Hammunima\Terbilang;
 
 use Illuminate\Support\ServiceProvider;
 
+use Illuminate\Support\Facades\App;
+
 class TerbilangServiceProvider extends ServiceProvider
 {
     /**
