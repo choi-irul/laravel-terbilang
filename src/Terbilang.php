@@ -12,7 +12,7 @@ class Terbilang {
         if (!is_numeric($nominal)) {
             return false;
         }        
-        return Self::kata($nominal) . 'rupiah';
+        return Self::kata($nominal) . ' rupiah';
     }
 
     public static function kata($x) {
