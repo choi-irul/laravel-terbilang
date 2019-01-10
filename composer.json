@@ -1,0 +1,29 @@
+{
+    "name": "hammunima/terbilang",
+    "description": "Konversi Terbilang",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Choirul Ummah",
+            "email": "choirul.sea@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Hammunima\\Terbilang\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hammunima\\Terbilang\\TerbilangServiceProvider"
+            ],
+            "aliases": {
+                "Tebilang": "Hammunima\\Tebilang\\Facade"
+            }
+        }
+    },
+}
