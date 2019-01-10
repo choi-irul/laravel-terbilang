@@ -28,6 +28,6 @@ class TerbilangServiceProvider extends ServiceProvider
     public function register()
     {
         $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-        $loader->alias('Terbilang', 'Hammunima\Terbilang\Facade\Terbilang');
+        $loader->alias('Terbilang', 'Hammunima\Terbilang\Terbilang');
     }
 }

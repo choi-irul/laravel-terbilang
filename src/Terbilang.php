@@ -4,18 +4,18 @@ namespace Hammunima\Terbilang;
 
 class Terbilang {
 
-    public function coba() {
+    public static function coba() {
         return 'Hello World!';
     }
 
-    public function nominal($nominal) {
+    public static function nominal($nominal) {
         if (!is_numeric($nominal)) {
             return false;
         }        
         return Self::kata($nominal);
     }
 
-    public function kata($x) {
+    public static function kata($x) {
         $x = abs($x);
 
         $angka = array("", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan", "sepuluh", "sebelas");
@@ -41,6 +41,6 @@ class Terbilang {
         } else if ($x < 1000000000000000) {
             $temp = self::kata($x / 1000000000000) . " trilyun" . self::kata(fmod($x, 1000000000000));
         }
-        return $temp;
+        return $temp . 'rupiah';
     }
 }
