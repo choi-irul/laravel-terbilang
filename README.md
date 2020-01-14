@@ -11,7 +11,7 @@ Konversi angka ke kata.
 
 
 ```Laravel
-composer remove hammunima/terbilang
+composer require hammunima/terbilang
 ```
 ## Usage
 
@@ -20,5 +20,5 @@ use Terbilang;
 
 
 echo Terbilang::nominal('5000000');          // lima juta
-echo Terbilang::convert('555000');       // lima ratus lima puluh lima ribu
+echo Terbilang::nominal('555000');       // lima ratus lima puluh lima ribu
 ```
